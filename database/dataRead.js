@@ -1,4 +1,5 @@
-var allReadingQuestions = [{
+window.Read = {[
+  {
     question: "Which of the following best describes the organization of this passage?",
     choices: ["The passage organizes ideas in order of increasing importance.", "The author presents an argument and then uses evidence to dismiss opposing views.", "The author explains a problem, explores solutions, and then dismisses these solutions as inadequate.", "The author explains a problem and then persuades readers to agree with his or her solution to the problem.", "The author explains a problem, contextualizes the problem, and ultimately dismisses it as an unnecessary concern." ],
     correctAnswer: 2
@@ -20,7 +21,7 @@ var allReadingQuestions = [{
   },
   {
     question: "Which of the following statements from the passage represents an opinion, as opposed to a fact?",
-    choices: ["\“For people who use email or other internet applications at work, the number of required username/password combinations may surpass 30.\"", "\“The feeling of frustration that results from maintaining a memorized list of login credentials has grown so prevalent that it actually has a name: password fatigue.\”", "\“Having to remember so many different passwords is irritating, but it can also be dangerous.\”", "\“Additionally, recovering a forgotten password is only a temporary solution; it does not address the larger problem of password fatigue.\”", "\“The problems associated with SSO, password management software, and biometrics continue to stimulate software engineers and computer security experts to search for the cure to password fatigue.\”"],
+    choices: ["'For people who use email or other internet applications at work, the number of required username/password combinations may surpass 30.'", "'The feeling of frustration that results from maintaining a memorized list of login credentials has grown so prevalent that it actually has a name: password fatigue.'", "'Having to remember so many different passwords is irritating, but it can also be dangerous.'", "'Additionally, recovering a forgotten password is only a temporary solution; it does not address the larger problem of password fatigue.'", "'The problems associated with SSO, password management software, and biometrics continue to stimulate software engineers and computer security experts to search for the cure to password fatigue.'"],
     correctAnswer: 2
   },
   {
@@ -33,5 +34,4 @@ var allReadingQuestions = [{
     choices:["animated", "resigned", "confused", "hopeful", "depressed"],
     correctAnswer: 1
   }];
-
-  export default dataRead;
+;
