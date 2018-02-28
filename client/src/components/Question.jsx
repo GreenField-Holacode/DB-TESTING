@@ -6,9 +6,3 @@ import QuestionList from './GroceryItem.jsx';
    );
 
  export default Question;
-
-/*
-<div className="groceries">
-  {props.list.map(item => <GroceryItem item={item} key={item.id}/>)}
-</div>
-*/
