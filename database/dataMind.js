@@ -1,4 +1,4 @@
-var allMindQuestions = [
+window.datMind = {[
   {
     question: "Am the life of the party."
   },
@@ -146,3 +146,4 @@ var allMindQuestions = [
     question: "Am full of ideas."
   }
 ];
+};
