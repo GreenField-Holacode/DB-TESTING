@@ -7,7 +7,16 @@ var connect = mysql.createConnection({
   password: 'root',
   database: 'application_form'
 });
-
+var selectProfile =function(callback){
+  connect.query('SELECT * FROM profile', (err, results, fields)=>{
+    if(err){
+      console.log('err selecting profile db');
+      callback(err, null)
+    }else {
+      callback(null, results)
+    }
+  })
+}
 var selectReadingQ =function(callback){
   connect.query('SELECT * FROM reading_assesment', (err, results, fields)=> {
     if(err){
@@ -101,3 +110,4 @@ module.exports.selectAnalyticalQ = selectAnalyticalQ;
 module.exports.userMindAnswer = userMindAnswer;
 module.exports.userWrittenAnswer = userWrittenAnswer;
 module.exports.insertData = insertData;
+module.exports.selectProfile= selectProfile;

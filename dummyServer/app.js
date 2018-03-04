@@ -13,7 +13,7 @@ app.get('/assesments', function(req, res){
       res.sendStatus(500);
     }else {
       console.log('works');
-      res.status(200).json(results);
+      res.sendStatus(200).json(results);
     }
   })
 });

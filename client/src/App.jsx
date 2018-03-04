@@ -107,10 +107,7 @@ class App extends React.Component {
        <button onClick={()=>{alert('Finish the Reading Comprehension test completly to save your answers.')}}> Reading Comprehension </button>
      </div>
       <div>
-        <MindQuestions assesments={this.state.assesments}/>
-      </div>
-      <div>
-        <ReadingTest assesments={this.state.reading}/>
+      <Profile data={this.state.data}/>
       </div>
     </div>
   )

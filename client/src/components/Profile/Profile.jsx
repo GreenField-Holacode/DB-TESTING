@@ -53,7 +53,7 @@ class Profile extends React.Component {
    this.setState({
      email: '',
      name: '',
-     LastName: '',
+     last_name: '',
      Nickname: '',
      phone: '',
      birthdate: '',
@@ -66,22 +66,7 @@ class Profile extends React.Component {
      holacode_discovery: '',
      commitment: ''
    });
-   this.props.onChange({
-     email: '',
-     name: '',
-     LastName: '',
-     Nickname: '',
-     phone: '',
-     birthdate: '',
-     gender: '',
-     nationality: '',
-     identification: '',
-     education_level: '',
-     coding_experience: '',
-     personal_reference: '',
-     holacode_discovery: '',
-     commitment: ''
-   });
+
  };
  handleEmail(e){
    this.setState({
