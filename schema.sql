@@ -29,6 +29,15 @@ CREATE TABLE profile (
   commitment varchar(30) NOT NULL
 );
 
+CREATE TABLE testName (
+  testID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  testName varchar(50) NOT NULL
+);
+
+INSERT INTO testName(testName) VALUES ('Mind Assesment');
+INSERT INTO testName(testName) VALUES ('Reading Comprehension');
+INSERT INTO testName(testName) VALUES ('Analytical Assesment');
+
 CREATE TABLE reading_assesment (
   readingID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   r_questions varchar(500) NOT NULL,
@@ -156,8 +165,9 @@ CREATE TABLE user_mind_assesment(
 
 CREATE TABLE analytical_assesment(
   analyticalID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  a_questions varchar(500) NOT NULL,
-  image nvarchar(500)
+  a_questions varchar(500),
+  image nvarchar(1500),
+  paragraph varchar(1500)
 
 );
 
@@ -205,6 +215,17 @@ INSERT INTO analytical_assesment(a_questions) VALUES ("A four-person crew from C
 INSERT INTO analytical_assesment(a_questions, image) VALUES ('Look carefully at the sequence of symbols to find the pattern. Select correct pattern.', "https://drive.google.com/file/d/1oT73bdsZxVienKLQKiVXRNoFmaIojeFQ/view?usp=sharing");
 INSERT INTO analytical_assesment(a_questions) VALUES ('Danielle has been visiting friends in Ridge-wood for the past two weeks. She is leaving tomorrow morning and her flight is very early. Most of her friends live fairly close to the airport. Madison lives ten miles away. Frances lives five miles away, Samantha, seven miles. Alexis is farther away than Frances, but closer than Samantha. Approximately how far away from the airport is Alexis?');
 INSERT INTO analytical_assesment(a_questions, image) VALUES ('Find the number of triangles in the given figure', "https://drive.google.com/file/d/1PfLBCAk7ix42PFxq-Es7ECsaCLbfxOsH/view?usp=sharing");
+INSERT INTO analytical_assesment(paragraph) VALUES ("At a small company, parking spaces are reserved for the top executives: CEO, president, vice president, secretary, and treasurer with the spaces lined up in that order. The parking lot guard can tell at a glance if the cars are parked correctly by looking at the color of the cars. The cars are yellow, green, purple, red, and blue, and the executives names are Alan, Ben, Christina, David, and Eddy. * The car in the first space is red. * A blue car is parked between the red car and the green car. * The car in the last space is purple. * The secretary drives a yellow car. * Alan's car is parked next to David's. * Eddy drives a green car. * Ben's car is parked between Christina's and Eddy's. * David's car is parked in the last space. Answer the following questions based on the paragraph above.");
+INSERT INTO  analytical_assesment(a_questions)
+VALUES ("Who is the secretary?");
+INSERT INTO  analytical_assesment(a_questions)
+VALUES ("Who is the CEO?");
+INSERT INTO  analytical_assesment(a_questions)
+VALUES ("What color is the vice-president's car?");
+INSERT INTO analytical_assesment(paragraph) VALUES ("Five roommates Ralph, Sam, T.J, Yvonne, and Val each do one housekeeping task mopping, sweeping, laundry, vacuuming, or dusting one day a week, Monday through Friday. * Val does not vacuum and does not do her task on Tuesday. * Sam does the dusting, and does not do it on Monday or Friday. * The mopping is done on Thursday. * T.J does his task, which is not vacuuming, on Wednesday. * The laundry is done on Friday, and not by Yvonne. * Ralph does his task on Monday. Answer the following questions based on the passage above");
+
+
+
 
 CREATE TABLE analyticalAnswers(
   analyticalAsnswersID int NOT NULL AUTO_INCREMENT PRIMARY KEY,

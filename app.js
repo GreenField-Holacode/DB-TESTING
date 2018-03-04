@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 var app = express();
 //MYSQL CONNECTION
 
-<<<<<<< HEAD
+
 // const mysql = require('mysql');
 // const connection = mysql.createConnection({
 //   host: 'localhost',
@@ -30,7 +30,7 @@ var app = express();
 // mongoose.connect('mongodb://localhost/loginapp');
 // var db = mongoose.connection;
 //
-=======
+
 /*/const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -48,7 +48,7 @@ connection.connect((err) => {
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 
->>>>>>> 6de175b3454999023b37a0b5e07d40f284ed894c
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 

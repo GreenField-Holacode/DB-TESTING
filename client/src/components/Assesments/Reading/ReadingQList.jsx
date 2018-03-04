@@ -4,10 +4,9 @@ import ReadingQItem from './ReadingQitem.jsx';
 const ReadingTest = (props)=>(
   <div className="readingQuestions">
     <h2> Reading Comprehension: </h2>
-    <li>Please complete your Reading Comprehension before logging out:</li>
     <li>Directions: Read the passage. Then answer the questions below.</li>
     <h3>SSO: A Viable Solution?</h3>
-    <p>The average computer user has between 5 and 15
+    <h4>The average computer user has between 5 and 15
 username/password combinations to log in to email accounts, social
 networking sites, discussion boards, news and entertainment sites, online
 stores, online banking accounts, or other websites. For people who use
@@ -55,20 +54,22 @@ questions concerning privacy and can also be expensive to implement.
 The problems associated with SSO, password management software, and biometrics continue to
 stimulate software engineers and computer security experts to search for the cure to password fatigue.
 Until they find the perfect solution, however, everyone will simply have to rely on the flawed password
-system currently in place.</p>
+system currently in place.</h4>
     {props.assesments.map( (reading)=>
         <ReadingQItem reading={reading}
         key={reading.readingID}></ReadingQItem>
       )}
 
-      Based on the information in the passage, explain SSO in your own words. What does it stand for? What does it do? What are its advantages and disadvantages? What are some alternatives to SSO?
+      <h3>Based on the information in the passage, explain SSO in your own words. What does it stand for? What does it do? What are its advantages and disadvantages? What are some alternatives to SSO?</h3>
       <textarea rows="8" cols="100"></textarea>
       <br />
-      Of the password solutions referenced in the passage, which sounds most appealing to you? How do you currently keep track of all of your passwords? Do you think you should switch to another method? Why or why not?
+      <h3>Of the password solutions referenced in the passage, which sounds most appealing to you? How do you currently keep track of all of your passwords? Do you think you should switch to another method? Why or why not?</h3>
       <textarea rows="8" cols="100"></textarea>
       <br />
-      Make some inferences about the author. What do you think is his or her academic or professional background? What type of audience do you think he or she is trying to reach? Which password solution do you think he or she most prefers? Why?
+      <h3>Make some inferences about the author. What do you think is his or her academic or professional background? What type of audience do you think he or she is trying to reach? Which password solution do you think he or she most prefers? Why?</h3>
       <textarea rows="8" cols="100"></textarea>
+      <br/>
+      <button onClick={()=>{alert('Your answers have been submitted')}}>Submit Answers</button>
   </div>
 )
 export default ReadingTest;

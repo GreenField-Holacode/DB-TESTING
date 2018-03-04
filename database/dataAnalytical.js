@@ -1,103 +1,103 @@
 //correctAnswer should add 1 point, idk is equal to 0.5
 var allQuestionsAnalytical = [
-  {
+  {1
     question: "Gabriela is jumping rope. A) Gabriela is on the jumping rope team during the summer. b) Gabriela is in the gym c) Jumping rope occurs in the gym during the summer. d) All the kids in the gym are jumping rope.",
     choices: ["A and B", "B and D", "C and D", "D and A", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {2
     question: "Jorge runs faster than Gabe. Lily runs faster than Jorge. Gabe runs faster than Lily. Who runs the fastest? ",
     choices:["Jorge", "Gabe", "Lily", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {3
     question: "Santiago lives on the floor below Javier. Sophie lives on the floor above Rosa. Rosa is on the floor below Santiago. Javier Lives with Lucas. Omar lives on the top floor. Who lives on the bottom floor?",
     choices: ["Rosa", "Santiago", "Javier", "Omar", "Sophie", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {4
     question: "In the above question who else shares an apartment?",
     choices: ["Santiago & Sophie", "Rosa & Omar", "Santiago & Omar", "Rosa & Sophie", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {5
     question: "A race contains 5 bikers. Biker A beat Biker B but not biker C. Biker D was beat by Biker E but beat Biker C. Who came last? ",
     choices: ["Biker A", "Biker B", "Biker C", "Biker D", "Biker D", "Biker E", "I don't know"],
     correctAnswer: 1
   },
-  {
+  {6
     question:"Look carefully at the sequence of symbols to find the patter. Select correct pattern"
     image: "https://drive.google.com/file/d/1lgvi5pYxUMtFcvus_6F2OMQVo2Zayaxo/view?usp=sharing"
     choices: ["1", "2", "3", "4", "I don't know"],
     correctAnswer: 3
   },
-  {
+  {7
     question: "Joe is younger than Kathy. Mark was born after Joe. Kathy is older than Mark. If the first two statements are true, the third statement is ",
     choices: ["True", "False", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {8
     question: "Look carefully at the sequence of symbols to find the pattern. Select correct pattern.",
     image: "https://drive.google.com/file/d/1QUs8fOJx27pEgZICTYKIgBUwnkOPbmLB/view?usp=sharing"
     choices: ["1", "2", "3", "4", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {9
     question: "A squirrel eats 8 nuts in 8 minutes. How long will it take for 32 squirrels to eat 32 nuts?",
     choices:["1", "2", "3", "4", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {10
     question: "In a class of 78 students 41 are taking French, 22 are taking German. Of the students taking French or German, 9 are taking both courses. How many students are not enrolled in either course?",
     choices:["6", "15", "24", "33", "54", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {11
     question: "If a man and a half can eat a hot dog and a half in a minute and a half, how long would it take six men to eat six hot dogs?",
     choices: ["2 minutes", "5 minutes", "30 seconds", "1.5 minutes", "I don't know"],
     correctAnswer: 3
   },
-  {
+  {12
     question: "How many times do the hands of a clock overlap in 24 hours?",
     choices: ["24", "12", "22", "16", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {13
     question: "The ages of a mother and her son that just graduated from collage add up to 66. The mother’s age is the son’s age reversed. How old are they?",
     choices:["42 and 24", " 51 and 15", "54 and 22", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {14
     question: "Look at this series: 22, 21, 23, 22, 24, 23, ... What number should come next?",
     choices: ["22", "24", "25", "26", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {15
     question: "A man ate 9 pounds of food in 5 days. If he eats at the same rate, how many days will it take him to eat 45 pounds?",
     choices: ["10", "20", "22.5", "25", "I don't know"],
     correctAnswer: 3
   },
-  {
+  {16
     question: "Maribel worked 10 hours on Sunday, 8 hours a day for the next 3 days and 6 hours on Thursday completing the week. For her 5 days of work she was paid 640 pesos. How many pesos did she earn per hour?",
     choices: ["18", "20", "16", "12.5", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {17
     question: "6 people take 6 minutes to make 6 baskets, how long would it take 100 people to make 100 baskets.",
     choices: ["6", "60", "100", "600", "I don't know"],
     correctAnswer: 0
   },
-  {
+  {18
     question: "Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?",
     choices: ["12", "14", "27", "53", "I don't know"],
     correctAnswer: 1
   },
-  {
+  {19
     question: "50 climbers started up a mountain. a) 20 climbers made it less than halfway. b) 10 climbers failed to start. c) 30 climbers reached more than halfway d) 40 climbers made it to the top.",
     choices: ["A and B", "B and D", "A and C", "C and D", "I don't know"],
     correctAnswer: 2
   },
-  {
+  {20
     question: "There are 4 birds sitting on a fence. From left to right are birds A,B,C and D. During a brief storm A changes places with C and then C changes places with B. Which bird is now at the left end of the row?",
     choices: ["Bird A", "Bird B", "Bird C", "Bird D", "I don't know"],
     correctAnswer: 1
@@ -243,7 +243,7 @@ var allQuestionsAnalytical = [
     choices: ["Green", "Yellow", "Blue", "Purple", "Red", "I don't know"],
     correctAnswer: 0
   }],
-  {
+  {+
     paragraph: "Five roommates Ralph, Sam, T.J, Yvonne, and Val each do one housekeeping task mopping, sweeping, laundry, vacuuming, or dusting one day a week, Monday through Friday. * Val does not vacuum and does not do her task on Tuesday. * Sam does the dusting, and does not do it on Monday or Friday. * The mopping is done on Thursday. * T.J does his task, which is not vacuuming, on Wednesday. * The laundry is done on Friday, and not by Yvonne. * Ralph does his task on Monday. Answer the following questions based on the passage above"
     questions:[
   {
@@ -266,7 +266,7 @@ var allQuestionsAnalytical = [
     choices: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "I don't know"],
     correctAnswer: 0
   }],
-  {
+  {+
     paragraph: "In each of the following questions, three statements are given followed by four conclusions numbered I, II, III and IV. You have to take the given statements to be true even if they seem to be at variance with commonly known facts and then decide which of the given conclusions logically follows from the given statements disregarding commonly known facts. Answer the following questions"
     questions: [
       {

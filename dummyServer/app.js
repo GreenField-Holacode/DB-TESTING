@@ -18,7 +18,7 @@ app.get('/assesments', function(req, res){
   })
 });
 
-app.get('/rAssesments', function(req, res){
+app.get('/reading', function(req, res){
   database.selectReadingQ((err, results)  => {
     if(err){
       console.log('error hitting reading assesment db');
@@ -40,15 +40,16 @@ app.get('/assesments', function(req, res){
   })
 });
 
-app.get('/assesments', function(req, res){
-  database.selectAnalyticalQ((err, results)  => {
-    if (err) {
-      console.log('error hitting analytical assesment db');
+app.get('/profile', function(req, res){
+  database.selectProfile((err, results) => {
+    if(err){
+      console.log('error hitting profile db');
       res.sendStatus(500);
-    }else {
+    }else{
       res.send(200).json(results);
     }
-  })
+  }
+)
 });
 
 

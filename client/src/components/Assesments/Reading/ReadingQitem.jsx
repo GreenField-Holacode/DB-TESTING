@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReadingQItem =(props)=>(
   <div>
-  <span>{props.reading.r_questions}</span>
+  <h3><span>{props.reading.r_questions}</span></h3>
 
   <br/>
   <form>

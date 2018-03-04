@@ -2,7 +2,7 @@
   "name": "hc01-admission",
   "version": "1.0.0",
   "description": "Solo Week Project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
     "start": "nodemon dummyServer/app.js"
@@ -44,6 +44,7 @@
     "passport-local": "*",
     "passport-strategy": "^1.0.0",
     "passport-ubuntu": "^0.2.0",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
