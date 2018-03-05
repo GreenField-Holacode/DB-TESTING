@@ -1,13 +1,13 @@
 # Greenfield
 
 
-## Application form for Hola <code/> ##
+## Application form for Hola Code ##
   Remake admission forms and add new functionalities to Hola <code/> application form, which is currently only a google form. Being able to save the application progress. Give staff statistics of results and grading the tests.
 
 
 ## General Information ##
 Making the a database to store applicants personal information, test progress and results. Giving the Hola Code team tools to grade and evaluate faster the entrance test and get statistics to help them plan strategies for getting more people to apply.
-We are familiar with SQL and MongoDB, we are not familiar yet with how to work with both together. 
+We are familiar with SQL and MongoDB and we try to implement for work together.
   
 ## Summary ##
  This app currently allows the applicant to create an account, by registering and later on having access into their profile, where they'll fill their information, which will be saved. It as well shows 2 of the 3 test forms, of the test, it is storing the data, but it is yet pending to be evaluated automatically.
@@ -23,8 +23,18 @@ We are familiar with SQL and MongoDB, we are not familiar yet with how to work w
 ## Legacy ##
   Have 3 assessments complete to be answered by applicants and later on have the app grade them automatically. Grade's are only seen by staff, therefore there should be a staff dashboard.
   Once this is completed, analytical tools will be added to the staff dashboard.
-  
+  -FEATURES RECOMENDED-
+  -event handlers for each assesment 
+  -styling front end
+  -Agreement page showing up befor start with the assesments
+  -Views of databases
+  -Dahsboards for Users and Admins
+  -API's for reporting services
+  -Reports of all users to admins
+   
 ## Stack ##
-
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+-MySql
+-Express
+-ReactJS
+-NodeJS
+-MongoDB(Authentication Forms)
